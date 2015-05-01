@@ -1,0 +1,5 @@
+<help>
+  <user order='1' src='docs/user_help.md'>How User Works</user>
+  <contacts order='3' src='docs/contacts_help.md'>Contacts</contacts>
+  <organization order='2' src='docs/organization_help.md'>Organizations</organizations>
+</help>

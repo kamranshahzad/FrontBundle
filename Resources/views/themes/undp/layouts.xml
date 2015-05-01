@@ -1,0 +1,28 @@
+<layouts>
+
+
+	<login url="/login" template="login.html.twig">
+		<head>
+			<title> Administrator Login </title>
+		</head>
+	</login>
+
+  <login url="/forgetpassword" template="login.html.twig"></login>
+
+  <login url="/register" template="login.html.twig"></login>
+
+  <login url="/email-confirm" template="login.html.twig"></login>
+
+
+    <home url="/" template="dashboard.html.twig">
+        <regions>
+            <leftside role="ROLE_ADMIN"></leftside>
+            <mainmenus></mainmenus>
+            <notification></notification>
+            <reminder></reminder>
+        </regions>
+	</home>
+
+
+
+</layouts>

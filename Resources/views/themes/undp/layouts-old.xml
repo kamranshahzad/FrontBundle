@@ -1,0 +1,29 @@
+<theme>
+
+    <commons>
+        <head>
+            <styles>
+                <link type="" required="bootstrap" file="my-styles-1.css"></link>
+                <link type="" file="my-styles-2.css"></link>
+            </styles>
+            <script>
+
+            </script>
+        </head>
+    </commons>
+
+    <layouts>
+        <front url="/" template="front.html.twig">
+            <regions>
+                <sidebar role="ROLE_ADMIN" rules="type=page" ></sidebar>
+            </regions>
+        </front>
+        <blog url="/blog" template="blog.html.twig"></blog>
+    </layouts>
+
+</theme>
+
+
+
+
+

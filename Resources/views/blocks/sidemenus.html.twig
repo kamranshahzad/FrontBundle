@@ -1,0 +1,14 @@
+<!--nav-->
+<ul id="large-nav" class="">
+{% for k,v in menu %}
+    <li class="">
+        <a href="{{ path(v.link) }}">
+            <div class="nav-icon">
+                <i style="" class="{{ v.class }}"></i>
+                <span>{{ v.title }}</span>
+            </div>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+<!--@nav-->

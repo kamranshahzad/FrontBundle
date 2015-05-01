@@ -1,0 +1,10 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <div class='error'>
+        <div class="message">
+            <h2>Application Error</h2>
+            <p>Oops! {{ status_text }}</p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,4 @@
+_cogilent_front_urls:
+    resource: "@CogilentFrontBundle/Controller"
+    type: annotation
+

@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/master-icon.png') }}">
+    <title> .: Directory Administrator :. </title>
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-3.2.0/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome-4.1.0/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/animatecss/animate.css') }}" />
+
+    <link rel="stylesheet" href="{{ asset('assets/css/login-styles.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style-metronic.css') }}" />
+
+    <script src="{{ asset('assets/vendor/libs/jquery-1.11.1.min.js') }}"></script>
+</head>
+<body class="login-body">
+
+
+    <div class="container">
+
+
+        <!--body-->
+        {% block body %}{% endblock %}
+        <!--@body-->
+
+    </div><!--@container-->
+
+
+
+
+<script>
+jQuery(document).ready(function(){
+    // inits
+    $('#organizationField').hide();
+    $('#register_form_isindividual input:radio').click(function() {
+      if ($(this).val() === 'y') {
+        $('#organizationField').hide();
+      } else if ($(this).val() === 'n') {
+        $('#organizationField').show();
+      }
+    });
+});
+</script>
+
+</body>
+</html>

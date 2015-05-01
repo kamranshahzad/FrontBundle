@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/master-icon.png') }}">
+    <title> .: Directory Administrator :. </title>
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-3.2.0/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome-4.1.0/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/animatecss/animate.css') }}" />
+    <link href="{{ asset('assets/css/file-uploads.css') }}" media="all" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="{{ asset('assets/vendor/metis-menu/metisMenu.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/admin-styles.css') }}" />
+
+    <script src="{{ asset('assets/vendor/libs/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/angularjs/angular.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap-3.2.0/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap-3.2.0/js/tooltip.js') }}"></script>
+    <script src="{{ asset('assets/grid/handlebars-1.0.rc.1.js') }}"></script>
+    <script src="{{ asset('assets/grid/app-grid.js') }}"></script>
+    <script src="{{ asset('assets/js/file-uploads.js') }}"></script>
+
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+
+    <style type="text/css">
+        .max { height: 1200px;}
+
+        .nav-icon i { }
+        .nav-icon span { display:block; padding: 4px;  color:#ffffff; font-size: 14px;}
+
+        .fontawesome-icon{
+            font-size:25px !important;
+            -moz-border-radius:75px;
+            -webkit-border-radius:75px;
+            border-radius:75px;
+            color:#ffffff;
+            text-align:center;
+            margin-top:2px;
+            width:45px;
+            height:45px;
+            line-height:45px
+        }
+        .background-green{
+            border-color:#54770f;background-color:#a0ce4e;
+        }
+
+        .background-green{
+            border-color:#54770f;background-color:#a0ce4e;
+        }
+        .tooltip-inner {text-align:left !important;padding: 7px;}
+        .redMark { color: #e02222; }
+    </style>
+
+</head>
+
+<body ng-app="" >
+
+
+
+
+<ng-view />
+
+
+<div ng-app="project">
+
+{{ region('sidebar') }}
+<!--body-->
+{% block body %}{% endblock %}
+<!--@body-->
+
+</div>
+
+
+
+<script src="{{ asset('assets/vendor/nicescroll/jquery.nicescroll.min.js') }}"></script>
+<script src="{{ asset('assets/js/apps.js') }}"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        //$('#side-menu').metisMenu();
+
+        $('.form-wrapper a').tooltip({html:true});
+
+        //set scrolls
+        $("body").niceScroll({
+            cursorcolor: '#000000',
+            zindex: 999999,
+            bouncescroll: true,
+            cursoropacitymax: 0.4,
+            cursorborder: '',
+            cursorborderradius: 7,
+            cursorwidth: '7px',
+            background: 'rgba(0,0,0,.1)',
+            autohidemode: false,
+            railpadding: {top:0,right:2,left:2,bottom:0}
+        });
+    });
+</script>
+
+</body>
+</html> 

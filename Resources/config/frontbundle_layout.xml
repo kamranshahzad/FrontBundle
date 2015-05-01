@@ -1,0 +1,18 @@
+<layout>
+
+    <inlineblocks>
+        <sidemenus template="sidemenus.html.twig">\Cogilent\FrontBundle\Helper\Blocks::sideMenu</sidemenus>
+        <notification-menu template="notifications-menu.html.twig">\Cogilent\FrontBundle\Helper\Blocks::notificationMenu</notification-menu>
+    </inlineblocks>
+
+    <regions>
+        <tabmenus>
+            <tabmenu-admin role="ROLE_ADMIN" template="sidemenus.html.twig">\Cogilent\FrontBundle\Helper\Blocks::sideAdminMenu</tabmenu-admin>
+            <tabmenu-user role="ROLE_USER" template="sidemenus.html.twig">\Cogilent\FrontBundle\Helper\Blocks::sideUserMenu</tabmenu-user>
+        </tabmenus>
+        <sidebar>
+            <front_links rule="/" template="front-sidebar.html.twig">FOOTER_CLASS</front_links>
+        </sidebar>
+    </regions>
+
+</layout>

@@ -1,0 +1,48 @@
+<!--notifications -->
+<nav class="navbar navbar-default navbar-static-top">
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts">
+                <li>
+                    <a href="#">
+                        <div>
+                            <i class="fa fa-users fa-fw"></i> 1 new user registerd
+                            <span class="dropdown-small pull-right text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#" class="text-center dropdown-button">
+                        See All Alerts
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- /.dropdown-alerts -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                <li><a href="{{path('account_changeprofile')}}"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                </li>
+                <li><a href="{{path('account_changepassword')}}"><i class="fa fa-gear fa-fw"></i> Change Password </a>
+                </li>
+                <li class="divider"></li>
+                <li><a class="dropdown-button" href="{{path('logout')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                </li>
+            </ul>
+            <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+
+        <!-- /.dropdown -->
+    </ul>
+</nav>
+<!--@notifications -->
